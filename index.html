@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="card border border-secondary mt-5">
+        <div class="card-body">
+          <h5 class="card-title">Weather Forecaster</h5>
+          <h5 id="current-time">Current Time</h5>
+
+          <button type="button" id="geo-button">Current Location</button>
+          <form id="city-form">
+            <input type="text" id="city-val" placeholder="Enter a city" />
+            <input type="submit" value="Go!" />
+          </form>
+
+          <br />
+          Current City: <span id="curr-city"> </span>
+          <br />
+          <span id="curr-temp">23</span>℃ 🌞
+          <br />
+          Forseeable Future:
+          <br />
+          <div class="row">
+            <div class="col-2">
+              Monday
+              <br />
+              <span class="weatherIcon">☁</span>
+            </div>
+            <div class="col-2">
+              Tuesday
+              <br />
+              <span class="weatherIcon">🌧</span>
+            </div>
+            <div class="col-2">
+              Wednesday
+              <br />
+              <span class="weatherIcon">🌈</span>
+            </div>
+            <div class="col-2">
+              Thursday
+              <br />
+              <span class="weatherIcon">🌞</span>
+            </div>
+            <div class="col-2">
+              Friday
+              <br />
+              <span class="weatherIcon">☁</span>
+            </div>
+          </div>
+          <br />
+          Precipitation: 2%
+          <br />
+          Wind: 2km/h
+          <br />
+          UV Index: Medium
+          <br />
+          <div>Want to see a radar?</div>
+          👇
+          <br />
+          <a
+            href="https://weather.com/weather/radar/interactive/l/97e2d3ffa31fd05d9766fe8805f0a530fa8ab4190a16d9e74f0f35a8834c0810"
+            class="card-link"
+            target="_blank"
+            >Click Here</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
